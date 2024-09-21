@@ -24,4 +24,9 @@ class LabController extends Controller
         $data = ['email' => 'ovdeshka@gmail.com', 'phone' => '+123456789'];
         return view('contact', $data);
     }
+    public function hobby()
+    {
+        $data = ['name' => 'Edward', 'hobby' => 'Defense of the Ancients 2'];
+        return view('hobbies', $data);
+    }
 }
